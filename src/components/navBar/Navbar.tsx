@@ -4,8 +4,6 @@ import React from 'react'
 
 function Navbar() {
  
-  
-
   return (
     <>
      <div className='w-full bg-indigo-900 text-white flex justify-center py-4'>

@@ -9,7 +9,7 @@ function Home() {
             <div className="flex flex-col gap-4 items-center justify-center py-4">
               <h2 className='text-5xl font-bold'>Seja bem vindo!</h2>
               <p className='text-xl'>Encontre os melhores preços de medicamentos aqui!</p>
-                <img src={img} alt=""/>  
+                <img src="/src/assets/img/home.png" alt=""/>  
               <div className="flex justify-around gap-4">              
                 <button className='cursor-pointer hover:bg-red-500 rounded bg-stone-400 text-white py-2 px-4'>Ver Produtos</button>
               </div>
