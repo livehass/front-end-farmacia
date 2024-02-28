@@ -46,8 +46,6 @@ function ListaCategorias() {
                                 <CartaoCategoria key={categoria.id} categoria={categoria} />
                             </>
                         ))}
-
-                        <Link to='/cadastroCategoria'><Plus size={190} weight='bold' color='lightblue' className="border bg-blue-600 hover:bg-blue-800 flex items-center justify-center rounded-2xl" /></Link>
                     </div>
                 </div>
             </div>
