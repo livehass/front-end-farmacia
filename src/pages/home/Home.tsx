@@ -1,24 +1,20 @@
-import './Home.css';
-
-
-function Home() {
+function Home(){
     return (
         <>
-        <div className="bg-neutral-50 flex justify-center">
-          <div className='container grid grid-cols-2 text-blue-500'>
-            <div className="flex flex-col gap-4 items-center justify-center py-4">
-              <h2 className='text-5xl font-bold'>Seja bem vindo!</h2>
-              <p className='text-xl'>Encontre os melhores preços de medicamentos aqui!</p>
-                <img src="/src/assets/img/home.png" alt=""/>  
-              <div className="flex justify-around gap-4">              
-                <button className='cursor-pointer hover:bg-red-500 rounded bg-stone-400 text-white py-2 px-4'>Ver Produtos</button>
+          <div className="bg-blue-300 flex justify-center aspect-auto">
+            <div className='container grid grid-cols-2 text-white'>
+              <div className="flex flex-col gap-4 items-center justify-center py-4">
+                <h2 className='text-7xl font-bold'>Projeto Farmácia - CRUD</h2>
+                <p className='text-3xl m-5'>Frontend utilizando a biblioteca React para interagir com o backend do projeto farmacia, criado com Spring Boot.</p>
+    
+                <div className="flex justify-around gap-4">
+                  <button className='rounded bg-blue-500 hover:bg-ble-900 text-white py-2 px-4'>Ver produtos</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      
-      </>
-    );
+        </>
+      )
 }
-
-export default Home;
+  
+export default Home

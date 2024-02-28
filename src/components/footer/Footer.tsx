@@ -1,24 +1,27 @@
-import React from 'react'
-import { FacebookLogo, InstagramLogo } from '@phosphor-icons/react'
+import { Envelope, GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
 
 function Footer() {
- 
-  
-
-  return (
-    <>
-        <div className="flex justify-center bg-indigo-900 text-white">
-          <div className="container flex flex-col items-center py-4">
-            <p className='text-xl font-bold'>Farmacia preço bom | Copyright: </p>
-            <p className='text-lg'>Acesse nossas redes sociais</p>
-            <div className='flex gap-2'>
-              <InstagramLogo size={48} weight='bold' />
-              <FacebookLogo size={48} weight='bold' />
+    return (
+      <>
+          <div className="bg-gradient-to-r from-blue-900 to-blue-800 flex justify-center text-white">
+            <div className="container flex flex-col items-center py-2">
+              <p className='text-xl font-bold'>Projeto Farmácia - CRUD</p>
+              <p className='text-lg'>Fernando Lopes</p>
+              <div className='flex gap-6 m-5'>
+                <a href='https://www.linkedin.com/in/fernando-barbosa-ferreira-lopes/'>
+                  <LinkedinLogo size={48} weight='bold' color='lightblue'/>
+                </a>
+                <a href='https://github.com/plasmus777'>
+                  <GithubLogo size={48} weight='bold' color='lightblue'/>
+                </a>
+                <a href='mailto'>
+                  <Envelope size={48} weight='bold' color='lightblue'/>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </>
-  )
+        </>
+    )
 }
-
-export default Footer
+  
+  export default Footer
