@@ -5,7 +5,7 @@ import CartaoCategoria from "../cartaoCategoria/CartaoCategoria";
 import { Plus } from "@phosphor-icons/react";
 import { toastAlerta } from "../../../util/toastAlerta";
 import { Link } from "react-router-dom";
-import { Hourglass } from "react-loader-spinner";
+import { Vortex } from "react-loader-spinner";
 
 function ListaCategorias() {
     const [categorias, setCategorias] = useState<Categoria[]>([]);
@@ -24,16 +24,20 @@ function ListaCategorias() {
 
     return (
         <>
-            {categorias.length === 0 && (
-                <Hourglass
-                visible={true}
-                height="200"
-                width="200"
-                ariaLabel="hourglass-loading"
-                wrapperStyle={{}}
-                wrapperClass="hourglass-wrapper mx-auto"
-            />
-            )}
+           <div className='flex justify-center ...'>
+      {categorias.length === 0 && (
+        <Vortex
+        visible={true}
+        height="80"
+        width="80"
+        ariaLabel="vortex-loading"
+        wrapperStyle={{}}
+        wrapperClass="vortex-wrapper"
+        colors={['white', 'blue', 'white', 'blue', 'white', 'blue']}
+
+        />
+      )}
+      </div>
             <div className="flex justify-center w-full py-4">
                 <div className="container flex flex-col">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

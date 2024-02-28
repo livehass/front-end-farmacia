@@ -15,7 +15,6 @@ import FormularioProduto from './components/produtos/formularioProduto/Formulari
 function App() {
   return (
     <>
-      <ToastContainer />
       <BrowserRouter>
         <Navbar />
         <div className='min-h-[80vh] width-100 bg-gradient-to-r from-blue-500 to-blue-600'>
